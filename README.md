@@ -15,5 +15,6 @@ npm install truffle@4.1.7 -g
 ```
 truffle test exercises/hello-world/HelloWorldTest.sol
 truffle test exercises/math-operators/MathOperatorsTest.sol
-truffle test exercises/counter/CounterTest.sol
+truffle test exercises/state-change/CounterTest.sol
+truffle test exercises/constructor/CounterTest.sol
 ```

@@ -1,7 +1,7 @@
 pragma solidity 0.4.23;
 
 contract Counter {
-    // declare public count variable (uint) to store number of ticks
+    // define public count variable (uint) to store number of ticks
     uint public count = 0; // @remove-line
 
     // implement tick() to increment counter
