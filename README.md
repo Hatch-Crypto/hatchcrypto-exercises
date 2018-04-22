@@ -17,4 +17,6 @@ truffle test exercises/hello-world/HelloWorldTest.sol
 truffle test exercises/math-operators/MathOperatorsTest.sol
 truffle test exercises/state-change/CounterTest.sol
 truffle test exercises/constructor/CounterTest.sol
+truffle test exercises/struct/TeamTest.sol
+truffle test exercises/mapping/TeamTest.sol
 ```
