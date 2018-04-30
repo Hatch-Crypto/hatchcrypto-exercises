@@ -7,11 +7,6 @@ import "./Balances.sol";
 contract BalancesTest {
     uint public initialBalance = 1 ether;
 
-    function testInitializeWithValue() public {
-        Balances instance = (new Balances).value(100 finney)();
-        Assert.equal(address(instance).balance, 100 finney, "constructor doesn't accept funds");
-    }
-
     function testDeposit() public {
         Balances instance = new Balances();
         instance.deposit.value(10 finney)();
