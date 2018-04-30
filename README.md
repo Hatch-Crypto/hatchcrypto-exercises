@@ -21,4 +21,5 @@ truffle test exercises/struct/TeamTest.sol
 truffle test exercises/mapping/TeamTest.sol
 truffle test exercises/iterable-mapping/AirdropTest.sol
 truffle test ./exercises/ownable/OwnableTest.sol
+truffle test ./exercises/payable/BalancesTest.sol
 ```
