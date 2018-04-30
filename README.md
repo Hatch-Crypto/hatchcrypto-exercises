@@ -23,4 +23,5 @@ truffle test exercises/iterable-mapping/AirdropTest.sol
 truffle test exercises/ownable/OwnableTest.sol
 truffle test exercises/payable/BalancesTest.sol
 truffle test exercises/deposit/DepositTest.sol
+truffle test exercises/reentrancy/ReentrancyTest.sol
 ```
