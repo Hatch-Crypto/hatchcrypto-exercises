@@ -25,4 +25,5 @@ truffle test exercises/payable/BalancesTest.sol
 truffle test exercises/deposit/DepositTest.sol
 truffle test exercises/reentrancy/ReentrancyTest.sol
 truffle test exercises/reentrancy-fix/ReentrancyFixTest.sol
+truffle test exercises/timed-voting/TimedVotingTest.sol
 ```
