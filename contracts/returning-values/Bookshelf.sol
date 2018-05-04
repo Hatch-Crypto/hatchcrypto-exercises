@@ -10,7 +10,7 @@ contract Bookshelf {
     }
 
     constructor() public {
-      books[0] = Book({ title: "The Internet of Money", pages: 150 });
+        books[0] = Book({ title: "The Internet of Money", pages: 150 });
     }
 
     function getBook(uint _id) view public returns (string, uint) {

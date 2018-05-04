@@ -13,18 +13,18 @@ npm install truffle@4.1.7 -g
 ## Test
 
 ```
-truffle test exercises/hello-world/HelloWorldTest.sol
-truffle test exercises/math-operators/MathOperatorsTest.sol
-truffle test exercises/state-change/CounterTest.sol
-truffle test exercises/constructor/CounterTest.sol
-truffle test exercises/struct/TeamTest.sol
-truffle test exercises/mapping/TeamTest.sol
-truffle test exercises/iterable-mapping/AirdropTest.sol
-truffle test exercises/ownable/OwnableTest.sol
-truffle test exercises/payable/BalancesTest.sol
-truffle test exercises/deposit/DepositTest.sol
-truffle test exercises/reentrancy/ReentrancyTest.sol
-truffle test exercises/reentrancy-fix/ReentrancyFixTest.sol
-truffle test exercises/timed-voting/TimedVotingTest.sol
-truffle test exercises/function-signature/FunctionSignatureTest.sol
+truffle test contracts/hello-world/HelloWorldTest.sol
+truffle test contracts/math-operators/MathOperatorsTest.sol
+truffle test contracts/state-change/CounterTest.sol
+truffle test contracts/constructor/CounterTest.sol
+truffle test contracts/struct/TeamTest.sol
+truffle test contracts/mapping/TeamTest.sol
+truffle test contracts/iterable-mapping/AirdropTest.sol
+truffle test contracts/ownable/OwnableTest.sol
+truffle test contracts/payable/BalancesTest.sol
+truffle test contracts/deposit/DepositTest.sol
+truffle test contracts/reentrancy/ReentrancyTest.sol
+truffle test contracts/reentrancy-fix/ReentrancyFixTest.sol
+truffle test contracts/timed-voting/TimedVotingTest.sol
+truffle test contracts/function-signature/FunctionSignatureTest.sol
 ```

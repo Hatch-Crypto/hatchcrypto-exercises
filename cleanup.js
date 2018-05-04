@@ -41,4 +41,4 @@ function readdir(dirPath) {
   });
 }
 
-readdir("exercises");
+readdir("contracts");
