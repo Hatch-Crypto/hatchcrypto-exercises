@@ -29,6 +29,7 @@ contract Destruct {
 
     function delegatePrune(address _address) public {
         // 3. implement delegatecall to delegate.prune(address)
+        // 4. delegatecall returns true/false on success/failure, revert in case of the failure
         bool result = address(delegate).delegatecall(bytes4(keccak256("prune(address)")), _address);   // @remove-line
         require(result);                                   // @remove-line
     }
