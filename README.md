@@ -28,4 +28,5 @@ truffle test contracts/reentrancy-fix/ReentrancyFixTest.sol
 truffle test contracts/timed-voting/TimedVotingTest.sol
 truffle test contracts/function-signature/FunctionSignatureTest.sol
 truffle test contracts/events/EventsTest.js
+truffle test contracts/destruct/DestructTest.sol
 ```
