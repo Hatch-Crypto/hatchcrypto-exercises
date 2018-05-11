@@ -1,0 +1,21 @@
+#! /bin/bash
+
+cd exercises/constructor && truffle test
+cd ../deposit && truffle test
+cd ../destruct && truffle test
+cd ../events && truffle test
+cd ../function-signature && truffle test
+cd ../hello-world && truffle test
+cd ../iterable-mapping && truffle test
+cd ../mapping && truffle test
+cd ../math-operators && truffle test
+cd ../ownable && truffle test
+cd ../payable && truffle test
+cd ../reentrancy && truffle test
+cd ../reentrancy-fix && truffle test
+cd ../returning-values && truffle test
+cd ../state-change && truffle test
+cd ../struct && truffle test
+cd ../timed-voting && truffle test
+cd ..
+cd ..
