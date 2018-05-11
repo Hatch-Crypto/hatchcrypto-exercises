@@ -17,6 +17,7 @@ cd ../reentrancy-fix && truffle test
 cd ../returning-values && truffle test
 cd ../state-change && truffle test
 cd ../struct && truffle test
+cd ../third-party-libraries && truffle test
 cd ../timed-voting && truffle test
 cd ..
 cd ..
