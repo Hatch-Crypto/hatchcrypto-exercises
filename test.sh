@@ -4,6 +4,7 @@ cd exercises/constructor && truffle test
 cd ../deposit && truffle test
 cd ../destruct && truffle test
 cd ../events && truffle test
+cd ../first-library && truffle test
 cd ../function-signature && truffle test
 cd ../hello-world && truffle test
 cd ../iterable-mapping && truffle test
