@@ -3,6 +3,7 @@
 cd exercises/constructor && truffle test
 cd ../deposit && truffle test
 cd ../destruct && truffle test
+cd ../enum && truffle test
 cd ../events && truffle test
 cd ../first-library && truffle test
 cd ../function-signature && truffle test
