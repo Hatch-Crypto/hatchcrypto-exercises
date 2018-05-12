@@ -19,5 +19,6 @@ cd ../state-change && truffle test
 cd ../struct && truffle test
 cd ../third-party-libraries && truffle test
 cd ../timed-voting && truffle test
+cd ../visibility && truffle test
 cd ..
 cd ..
