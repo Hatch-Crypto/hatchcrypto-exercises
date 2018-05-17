@@ -12,6 +12,15 @@ contract Deposit is Ownable {
 }
 ```
 
+## Prerequisites
+
+Copy `Ownable.sol` from `ownable` exercise to `contracts` directory.
+
+```
+cd exercises/deposit/
+cp ../ownable/contracts/Ownable.sol contracts/
+```
+
 ## Reference
 
 * http://solidity.readthedocs.io/en/v0.4.23/contracts.html#inheritance

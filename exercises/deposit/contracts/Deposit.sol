@@ -1,6 +1,6 @@
 pragma solidity 0.4.23;
 
-import "../../ownable/contracts/Ownable.sol";
+import "./Ownable.sol";
 
 
 contract Deposit is Ownable {

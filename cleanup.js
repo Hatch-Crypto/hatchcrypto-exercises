@@ -3,6 +3,12 @@
 const fs = require("fs");
 const path = require("path");
 
+function unlink(path) {
+  fs.unlink(path, (err) => {
+    if (!err) console.log(`Removed ${path}`);
+  });
+}
+
 function cleanup(filePath) {
   const lineReader = require("readline").createInterface({
     input: fs.createReadStream(filePath)
@@ -41,4 +47,5 @@ function readdir(dirPath) {
   });
 }
 
+unlink("exercises/deposit/contracts/Ownable.sol");
 readdir("exercises");
