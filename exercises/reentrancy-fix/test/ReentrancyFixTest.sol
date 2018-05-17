@@ -2,7 +2,7 @@ pragma solidity 0.4.23;
 
 import "truffle/Assert.sol";
 import "../contracts/ReentrancyFix.sol";
-import "../../reentrancy/contracts/Reentrancy.sol";
+import "../contracts/Reentrancy.sol";
 
 
 contract ReentrancyFixTest {

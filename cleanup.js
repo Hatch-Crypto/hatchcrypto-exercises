@@ -49,4 +49,6 @@ function readdir(dirPath) {
 
 unlink("exercises/deposit/contracts/Ownable.sol");
 unlink("exercises/reentrancy/contracts/Balances.sol");
+unlink("exercises/reentrancy-fix/contracts/Balances.sol");
+unlink("exercises/reentrancy-fix/contracts/Reentrancy.sol");
 readdir("exercises");
