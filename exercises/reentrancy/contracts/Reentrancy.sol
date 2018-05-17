@@ -1,6 +1,6 @@
 pragma solidity 0.4.23;
 
-import "../../payable/contracts/Balances.sol";
+import "./Balances.sol";
 
 
 contract VulnerableBalances is Balances {
