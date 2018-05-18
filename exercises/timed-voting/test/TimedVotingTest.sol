@@ -22,11 +22,11 @@ contract TimedVotingTest {
         timedVoting = new TimedVoting(candidates, voters, block.number, block.timestamp + 1 days);
 
         bool result;
-        (, result) = timedVoting.votes(ADDR);
+        (, result) = timedVoting.results(ADDR);
         Assert.equal(result, true, "first candidate is not marked as one");
-        (, result) = timedVoting.votes(ADDR2);
+        (, result) = timedVoting.results(ADDR2);
         Assert.equal(result, true, "second candidate is not marked as one");
-        (, result) = timedVoting.votes(ADDR3);
+        (, result) = timedVoting.results(ADDR3);
         Assert.equal(result, false, "non-existing candidate is marked as one");
     }
 
@@ -35,7 +35,7 @@ contract TimedVotingTest {
 
         uint votes;
         bool result = timedVoting.vote(ADDR);
-        (votes,) = timedVoting.votes(ADDR);
+        (votes,) = timedVoting.results(ADDR);
 
         Assert.equal(timedVoting.voted(address(this)), true, "voter is not marked already voted");
         Assert.equal(votes, 1, "votes count is incorrect");

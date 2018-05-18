@@ -5,7 +5,7 @@ contract Team {
     struct Manager {                                            // @remove-line
         string name;                                            // @remove-line
         uint score;                                             // @remove-line
-    }
+    }                                                           // @remove-line
 
     // declare manager variable of type Manager
     Manager manager;                                            // @remove-line
@@ -14,7 +14,6 @@ contract Team {
     function setManager(string _name, uint _score) public {     // @remove-line
         manager = Manager(_name, _score);                       // @remove-line
     }                                                           // @remove-line
-
 
     // create increaseManagerScore that accepts number of scores to add to manager.score
     function increaseManagerScore(uint _by) public {            // @remove-line

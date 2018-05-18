@@ -13,6 +13,7 @@ contract ReentrancyFixTest {
         balances.deposit.value(100 finney)();
         Attacker attacker = (new Attacker).value(2 finney)(balances);
         attacker.start();
+
         Assert.equal(address(attacker).balance, 102 finney, "attacker contract doesn't work");
     }
 
@@ -22,7 +23,7 @@ contract ReentrancyFixTest {
         Attacker attacker = (new Attacker).value(2 finney)(VulnerableBalances(balances));
         attacker.start();
 
-        Assert.equal(address(attacker).balance, 2 finney, "is vulnerable");
+        Assert.isAtMost(address(attacker).balance, 2 finney, "is vulnerable");
     }
 
     function testSecureBalancesWithSend() public {

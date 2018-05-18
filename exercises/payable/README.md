@@ -13,9 +13,9 @@ There are multiple subdenominations of Ether. You can use them to avoid working 
 Functions that accept Ether transfer requires `payable` modifier. Payable modifier can be applied to constructor to create contract with balance, to regular function, or to fallback function to accept regular transfers.
 
 ```
-constructor() payable public {}
-function buyToken() payable public {}
-function () public payable {}
+constructor() payable public {}          // create contract with balance
+function buyToken() payable public {}    // accept funds with function call
+function () public payable {}            // accept regular transfers
 ```
 
 ## Reference

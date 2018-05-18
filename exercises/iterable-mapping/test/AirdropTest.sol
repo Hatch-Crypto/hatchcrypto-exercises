@@ -35,5 +35,6 @@ contract AirdropTest {
         airdrop.removeAddress(ADDR1);
         Assert.equal(airdrop.isSet(ADDR1), false, "address is set after it was removed");
         Assert.equal(airdrop.balances(ADDR1), 0, "balance is not 0 after address was removed");
+        Assert.equal(airdrop.addresses(0), 0, "address exists in array after it was removed");
     }
 }

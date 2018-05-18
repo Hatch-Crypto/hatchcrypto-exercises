@@ -5,13 +5,13 @@ contract Team {
         string name;
     }
 
-    // create public mapping that maps mamber id (uint) to a Member
+    // create public mapping that maps member id (uint) to a Member
     mapping(uint => Member) public members;                               // @remove-line
 
-    // create setMember for adding a new member that accepts _id, name and position as arguments
+    // create setMember for adding a new member that accepts _id, and _name as arguments
     function setMember(uint _id, string _name) public {                   // @remove-line
         members[_id] = Member(_name);                                     // @remove-line
-    }
+    }                                                                     // @remove-line
 
     // create getMemberName that returns name of the member by id
     function getMemberName(uint _id) public view returns (string) {       // @remove-line

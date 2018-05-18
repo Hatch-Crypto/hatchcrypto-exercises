@@ -1,7 +1,7 @@
 pragma solidity 0.4.23;
 
 contract Airdrop {
-    address[] internal addresses;
+    address[] public addresses;
     mapping(address => bool) public isSet;
     mapping(address => uint) public balances;
 
@@ -17,10 +17,10 @@ contract Airdrop {
     // make a precondition that address is already set
     function removeAddress(address _address) public {    // @remove-line
         require(isSet[_address]);                        // @remove-line
+        delete balances[_address];                       // @remove-line
+        delete isSet[_address];                          // @remove-line
         for (uint i = 0; i < addresses.length; i++) {    // @remove-line
             if (addresses[i] == _address) {              // @remove-line
-                delete isSet[addresses[i]];              // @remove-line
-                delete balances[addresses[i]];           // @remove-line
                 delete addresses[i];                     // @remove-line
             }                                            // @remove-line
         }                                                // @remove-line
