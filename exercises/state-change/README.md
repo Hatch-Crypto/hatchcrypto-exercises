@@ -39,6 +39,11 @@ bytes     // []
 
 Solidity inherits its scoping rules from JavaScript. Solidity inherits its scoping rules from JavaScript. It works like each variable is was declared with var keyword and is hoisted.
 
+## Important Links
+
+* [ETH Gas Station](https://ethgasstation.info/) - consumer oriented metrics for Ethereum gas
+* [Etherscan](https://etherscan.io/) - the most important block explorer for Ethereum
+
 ## Reference
 
 * http://solidity.readthedocs.io/en/v0.4.23/introduction-to-smart-contracts.html
