@@ -21,12 +21,14 @@ contract Events is Airdrop {
     }
 
     function removeAddress(address _address) public {
+        // use super to call removeAddress(address) from Airdrop
         // emit AddressAdded event using low-level log1 function insteadof emit
         super.removeAddress(_address);                                           // @remove-line
-        log1(bytes32(_address), bytes32(keccak256("AddressRemoved(address)")));  // @remove-line
+        log1(bytes32(_address), keccak256("AddressRemoved(address)"));           // @remove-line
     }
 
     function airdrop(uint _value) public {
+        // use super to call airdrop(value) from Airdrop
         // emit Airdrop event
         super.airdrop(_value);                                                   // @remove-line
         emit Airdrop(_value, addresses.length);                                  // @remove-line
